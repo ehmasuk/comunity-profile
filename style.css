@@ -1,0 +1,188 @@
+/* deafult */
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #F8FAFB;
+}
+.row {
+    margin: 0;
+}
+p {
+    margin-bottom: 0;
+}
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+a:hover {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+*::-webkit-scrollbar {
+    width: 20px;
+}
+*::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+}
+*::-webkit-scrollbar-thumb:hover {
+    background-color: #794eda;
+}
+.btn {
+    box-shadow: none !important;
+}
+
+
+
+
+/* hero section */
+.com-user-hero-section .com-user-cover{
+    height:350px;
+}
+.com-user-hero-section .com-user-cover img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 7px;
+}
+.com-user-hero-section .com-user-profile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -30px;
+}
+.com-user-profile .user-com-profile-pic img{
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+    border: 4px solid #fff;
+}
+.com-user-profile .user-com-profile-info .name{
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.com-user-profile .user-com-profile-info .total-info span{
+    margin-right: 20px;
+    font-weight: 500;
+}
+.com-user-profile .user-com-profile-btn button{
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 150px;
+    padding: 7px 20px;
+    min-width: 120px;
+}
+.com-user-profile .user-com-profile-btn .add{
+    background-color: #7D53DA;
+    margin-right: 10px;
+}
+.com-user-profile .user-com-profile-btn .follow{
+    background-color: #5271FF;
+}
+
+
+/* carousel */
+.profile-stories-section{
+    background-color: #000;
+    padding: 30px 0;
+    margin-top: 100px;
+    position: relative;
+}
+.profile-stories-section .profil-stories-wraper .title{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.profile-stories-section .profil-stories-wraper .single-book{
+    padding: 10px;
+    background-color: #fff;
+    text-align: center;
+}
+.profile-stories-section .profil-stories-wraper .single-book img{
+    height: 350px;
+    object-fit: cover;
+}
+.profile-stories-section .profil-stories-wraper .single-book .info{
+    margin-top: 10px;
+}
+.profile-stories-section .owl-nav .owl-prev{
+    position: absolute;
+    color: #fff !important;
+    font-size: 70px !important;
+    left: -20%;
+    top: 35%;
+}
+.profile-stories-section .owl-nav .owl-next{
+    position: absolute;
+    color: #fff !important;
+    font-size: 70px !important;
+    right: -20%;
+    top: 35%;
+}
+
+.tab-hr-of-com-pro{
+    height: 2px;
+    width: 100%;
+    background-color: #eee;
+    margin: 30px 0;
+}
+
+.com-stories-wraper{
+    padding: 30px 0;
+}
+.com-profile-comb-tab span{
+    margin-right: 50px;
+    display: inline-block;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+
+}
+.com-profile-comb-tab .active{
+    color: #5271FF;
+    border-bottom: 3px solid #5271FF;
+    
+}
+
+
+.com-stories-wraper .single-story-com{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.com-stories-wraper .single-story-com .com-date{
+    font-weight: 600;
+    color: #85878A;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.com-stories-wraper .single-story-com .com-title{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.com-stories-wraper .single-story-com .com-des{
+    text-align: justify;
+    margin-bottom: 10px;
+
+    font-size: 20px;
+    line-height: 30px;
+}
+.com-stories-wraper .single-story-com .com-footer span{
+    font-weight: 600;
+    margin-right: 20px;
+    color: #85878A;
+    font-size: 18px;
+}
