@@ -27,7 +27,7 @@
                 <div class="com-user-profile">
                     <div class="d-flex align-items-center">
                         <div class="user-com-profile-pic">
-                            <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" />
+                            <img src="https://escuela-ray-bolivar-sosa.com/newtheme/images/59f9b8d60fe1f-bpfull6fb4.jpg" alt="" />
                         </div>
                         <div class="user-com-profile-info">
                             <p class="name">Ray bolibar sosa</p>
@@ -125,14 +125,14 @@
 
 
         <!-- com-profile-combine-section -->
-        <section class="com-profile-comb">
+        <section class="com-profile-comb" style="display: none;">
             <div class="container">
                 <hr class="tab-hr-of-com-pro">
                 <div class="com-profile-comb-tab">
-                    <span>About</span>
-                    <span class="active">Stories</span>
-                    <span>Posts</span>
-                    <span>Contests</span>
+                    <!-- <span>About</span> -->
+                    <span onclick="showStoriesTab()" class="active">Stories</span>
+                    <span onclick="showPostsTab()" class="posts">Posts</span>
+                    <!-- <span>Contests</span> -->
                 </div>
 
 
@@ -183,6 +183,62 @@
 </div>
 
 
+
+<div class="com-posts-wraper">
+    <div class="container p-0">
+        <div class="row justify-content-between">
+
+
+            <div class="col-md-6">
+                <div class="com-posts-single">
+                    <img src="https://images.pexels.com/photos/8349431/pexels-photo-8349431.jpeg?auto=compress&cs=tinysrgb&w" alt="" class="post-img">
+                    <p class="com-post-date">Sep 21</p>
+                    <p class="com-post-title">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis beatae quam tempore. Rerum, doloremque facilis?</p>
+                    <div class="com-post-tags">
+                        <span>Romantic</span>
+                        <span>Story</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="com-posts-single">
+                    <img src="https://images.pexels.com/photos/5414004/pexels-photo-5414004.jpeg?auto=compress&cs=tinysrgb&w" alt="" class="post-img">
+                    <p class="com-post-date">Sep 21</p>
+                    <p class="com-post-title">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis beatae quam tempore. Rerum, doloremque facilis?</p>
+                    <div class="com-post-tags">
+                        <span>Romantic</span>
+                        <span>Story</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="com-posts-single">
+                    <img src="https://images.pexels.com/photos/3983697/pexels-photo-3983697.jpeg?auto=compress&cs=tinysrgb&w" alt="" class="post-img">
+                    <p class="com-post-date">Sep 21</p>
+                    <p class="com-post-title">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis beatae quam tempore. Rerum, doloremque facilis?</p>
+                    <div class="com-post-tags">
+                        <span>Romantic</span>
+                        <span>Story</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="com-posts-single">
+                    <img src="https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg?auto=compress&cs=tinysrgb&w" alt="" class="post-img">
+                    <p class="com-post-date">Sep 21</p>
+                    <p class="com-post-title">But I must explain to you how all this mistaken idea of denouncing</p>
+                    <div class="com-post-tags">
+                        <span>Romantic</span>
+                        <span>Erotica</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</div>
 
 
 
@@ -254,7 +310,16 @@
 </script>
 
 
-
+<script>
+    let showStoriesTab =  ()=>{
+        document.querySelector('.com-stories-wraper').style.display = 'block';
+        document.querySelector('.com-posts-wraper').style.display = 'none';
+    }
+    let showPostsTab =  ()=>{
+        document.querySelector('.com-stories-wraper').style.display = 'none';
+        document.querySelector('.com-posts-wraper').style.display = 'block';
+    }
+</script>
 
 
 

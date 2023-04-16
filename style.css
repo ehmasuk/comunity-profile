@@ -186,3 +186,36 @@ a:hover {
     color: #85878A;
     font-size: 18px;
 }
+
+
+.com-posts-wraper{
+    display: none;
+    padding: 50px 0;
+}
+.com-posts-single{
+    margin-bottom: 100px;
+}
+.com-posts-single .post-img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.com-posts-single .com-post-date{
+    font-weight: 600;
+    color: #85878A;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+.com-posts-single .com-post-title{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+.com-posts-single .com-post-tags span{
+    font-weight: 600;
+    margin-right: 20px;
+    color: #85878A;
+    font-size: 17px;
+}
