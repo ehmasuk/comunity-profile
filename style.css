@@ -219,3 +219,79 @@ a:hover {
     color: #85878A;
     font-size: 17px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.techer-hover-box{
+    width: 90%;
+    max-width: 500px;
+    background-color: #fff;
+    box-shadow: 0 10px 30px 11px rgb(0 0 0 / 25%);
+    z-index: 999;
+    padding: 30px;
+    text-align: center;
+    overflow: hidden;
+    display: none;
+}
+.techer-hover-box .img-box img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    z-index: 2;
+    position: relative;
+}
+.techer-hover-box .img-box{
+    position: relative;
+}
+.techer-hover-box .img-box::before{
+    content: '';
+    position: absolute;
+    height: 179px;
+    width: 600px;
+    background-color: #CB6CE6;
+    left: -100px;
+    top: -77px;
+    z-index: 1;
+    transform: rotate(6deg);
+}
+.techer-hover-box .pro-name{
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin: 20px 0;
+}
+.techer-hover-box .pro-des{
+    margin-bottom: 20px;
+}
+.techer-hover-box .pro-socials a{
+    height: 50px;
+    width: 50px;
+    display: inline-flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #dcdcdc;
+    margin-right: 10px;
+}
+.techer-hover-box .pro-socials{
+    margin-top: 40px;
+}
+.techer-hover-box .pro-socials a i{
+    font-size: 22px;
+    color: #000;
+}

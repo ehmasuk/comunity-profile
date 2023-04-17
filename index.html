@@ -125,14 +125,14 @@
 
 
         <!-- com-profile-combine-section -->
-        <section class="com-profile-comb" style="display: none;">
+        <section class="com-profile-comb">
             <div class="container">
                 <hr class="tab-hr-of-com-pro">
                 <div class="com-profile-comb-tab">
-                    <!-- <span>About</span> -->
-                    <span onclick="showStoriesTab()" class="active">Stories</span>
-                    <span onclick="showPostsTab()" class="posts">Posts</span>
-                    <!-- <span>Contests</span> -->
+                    <span class="active">Stories</span>
+                    <span class="posts">Posts</span>
+                    <span>Contests</span>
+                    <span>Author</span>
                 </div>
 
 
@@ -142,7 +142,7 @@
 <!-- stories section -->
 
 
-<div class="com-stories-wraper">
+<div class="com-last-info-wraper com-stories-wraper">
 
 
     <div class="single-story-com">
@@ -184,7 +184,7 @@
 
 
 
-<div class="com-posts-wraper">
+<div class="com-last-info-wraper com-posts-wraper">
     <div class="container p-0">
         <div class="row justify-content-between">
 
@@ -247,7 +247,6 @@
 
 
 
-
             </div>
         </section>
 
@@ -258,7 +257,20 @@
 
 
 
-
+        <div class="techer-hover-box">
+            <div class="img-box">
+                <img src="https://escuela-ray-bolivar-sosa.com/newtheme/images/59f9b8d60fe1f-bpfull6fb4.jpg" alt="">
+            </div>
+            <p class="pro-name">Ray bolibar sosa</p>
+            <p class="pro-des">Hola, soy Ray Bolívar Sosa experto en escritura académica y creativa.Tengo una experiencia de alrededor de quince años impartiendo formación tanto en Lengua y Literatura como en Escritura Académica, con lo cual, te animo a que des una vuelta por la escuela, hay mucha información que podría interesarte.</p>
+            <div class="pro-socials">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        
 
 
 
@@ -311,14 +323,38 @@
 
 
 <script>
-    let showStoriesTab =  ()=>{
-        document.querySelector('.com-stories-wraper').style.display = 'block';
-        document.querySelector('.com-posts-wraper').style.display = 'none';
+
+
+
+
+    let tabButtons = document.querySelectorAll('.com-profile-comb-tab span');
+
+    for(let i=0; i<tabButtons.length; i++){
+        tabButtons[i].addEventListener('click',(e)=>{
+            for(let j=0; j<tabButtons.length; j++){
+                tabButtons[j].classList.remove('active')
+                document.querySelector('.com-last-info-wraper').style.display = 'none';
+            }
+            e.target.classList.add('active');
+
+            if(e.target.innerText == 'Stories'){
+                document.querySelector('.com-stories-wraper').style.display = 'block';
+            }
+            if(e.target.innerText == 'Posts'){
+                document.querySelector('.com-posts-wraper').style.display = 'block';
+            };
+        })
     }
-    let showPostsTab =  ()=>{
-        document.querySelector('.com-stories-wraper').style.display = 'none';
-        document.querySelector('.com-posts-wraper').style.display = 'block';
-    }
+
+
+
+
+
+
+
+
+
+
 </script>
 
 
