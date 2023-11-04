@@ -67,6 +67,15 @@
                         </div>
                         <div class="single-book">
                             <a href="#">
+                                <img src="img/bcover.jpg" alt="" />
+                                <div class="info">
+                                    <p>Cielo rojo</p>
+                                    <p>November 2019</p>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- <div class="single-book">
+                            <a href="#">
                                 <img src="https://i.pinimg.com/170x/a8/e1/6a/a8e16a1259b174d21156a69fb5d56fbe.jpg" alt="" />
                                 <div class="info">
                                     <p>Cielo rojo</p>
@@ -109,7 +118,7 @@
                                     <p>November 2019</p>
                                 </div>
                             </a>
-                        </div>
+                        </div> -->
 
 
 
@@ -250,30 +259,6 @@
             </div>
         </section>
 
-        
-
-
-
-
-
-
-        <div class="techer-hover-box">
-            <div class="img-box">
-                <img src="https://escuela-ray-bolivar-sosa.com/newtheme/images/59f9b8d60fe1f-bpfull6fb4.jpg" alt="">
-            </div>
-            <p class="pro-name">Ray bolibar sosa</p>
-            <p class="pro-des">Hola, soy Ray Bolívar Sosa experto en escritura académica y creativa.Tengo una experiencia de alrededor de quince años impartiendo formación tanto en Lengua y Literatura como en Escritura Académica, con lo cual, te animo a que des una vuelta por la escuela, hay mucha información que podría interesarte.</p>
-            <div class="pro-socials">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-whatsapp"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-        </div>
-        
-
-
-
 
 
 
@@ -289,8 +274,9 @@
     $(document).ready(function(){
         $(".owl-carousel").owlCarousel({
             items:4,
-            loop:true,
+            loop:( $('.owl-carousel > *').length >= 4 ),
             autoplay:true,
+            // rewind: true,
             autoplayTimeout:5000,
             autoplayHoverPause:true,
             nav:false,
@@ -319,12 +305,30 @@
         });
         
         });
+
+
+
+
+
+
+
+
+
+
+
 </script>
+
+
+
+
+
 
 
 <script>
 
 
+
+    
 
 
     let tabButtons = document.querySelectorAll('.com-profile-comb-tab span');
